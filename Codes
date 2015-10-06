@@ -1,0 +1,80 @@
+# Initialize GIT
+git init
+
+#sign-in 
+git config --global user.name "abiharihar"
+git config --global user.email "abishek_har@hotmail.com"
+
+##check files
+git status
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+## track files (all)
+git add --all
+
+
+#####
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   .Rhistory
+	new file:   Abi 1
+	new file:   Abi 2
+	new file:   Abi 2~
+	new file:   Chital.R
+	new file:   Codes
+	new file:   Convert.R
+	new file:   Script.R
+	new file:   Untitled Document~
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Chital.R
+
+
+
+## check status again
+git status
+                     
+## Then add only the modified file
+git add Chital.R
+
+git commit --m "change data check"
+
+
+abishek@abishek-OptiPlex-9020:~/Gittrial$ git log
+commit a6dd697add62bf36e0cb0e5b898ce955b622eaf3
+Author: abiharihar <abishek_har@hotmail.com>
+Date:   Tue Oct 6 21:29:09 2015 +0530
+
+    change data check
+
+commit 827ddcc60569be0d78fcfe6c8ca734017caac123
+Author: abiharihar <abishek_har@hotmail.com>
+Date:   Tue Oct 6 21:27:10 2015 +0530
+
+    redundant sentence
+
+commit 3d2e7d005f2a94710d165b5df1b5a245cf941a38
+Author: abiharihar <abishek_har@hotmail.com>
+Date:   Tue Oct 6 21:24:57 2015 +0530
+
+    added data check
+
+## see difference between version
+git diff 3d2e7 a6dd
+
+
+## Make a branch
+git branch runner
+
+git checkout runner
+
+                                                                   
